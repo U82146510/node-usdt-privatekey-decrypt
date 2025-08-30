@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt USDT</title>
+</head>
+<body>
+    <div class="main-form">
+        <form action="/" method="post" class="data-form">
+            <h2>Decrypt USDT privateKey</h2>
+            <input type="text" name="privatekey" placeholder="enter privateKey" required>
+            <input type="text" name="encryptionkey" placeholder="enter encryptionKey" required>
+            <button type="submit">Decrypt</button>
+        </form>
+        <%if(message){%>
+            <p class="message"><%=message%></p>>
+        <%}%>
+        <%if(error){%>
+            <p class="error"><%=error%></p>
+        <%}%>
+    </div>
+</body>
+</html>
